@@ -1,0 +1,17 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="logo">Mystery Code</div>
+    <dx-list
+      :items="menuItems"
+      displayExpr="text"
+      :hoverStateEnabled="true"
+      :activeStateEnabled="true"
+      :selectionMode="'single'"
+      @itemClick="onMenuItemClick"
+    />
+  </aside>
+
+  <main class="content">
+    <router-view />
+  </main>
+</div>
